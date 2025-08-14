@@ -1,0 +1,5 @@
+config BR2_PACKAGE_BITBIP
+    bool "bitbip"
+    depends on BR2_LINUX_KERNEL
+    help
+      Compiles and install a PWM buzzer song player.
