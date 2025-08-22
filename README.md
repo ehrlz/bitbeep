@@ -40,7 +40,7 @@ Info. obtained from H6 User Manual.
 
 ### Copy the buildroot generated image in a portable memory (SD card, USB, etc...)
 ```
-sudo dd if=output/images/sdcard.img of=/dev/sdX bs=1M conv=fsync
+sudo dd if=output/images/sdcard.img of=/dev/sdX bs=1M conv=fsync status=progress
 sudo sync
 ```
 > Check which sdX device is the portable memory with `lsblk`
