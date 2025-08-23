@@ -1,5 +1,8 @@
 # BitBip
 
+CRITICAL NOTE:
+At 2025-08, linux doesn't provide PWM support for Allwinner H616 and H618. This way can't be done. 
+
 ## Buildroot image
 Features:
 - root login with password `123`
