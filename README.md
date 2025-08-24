@@ -45,7 +45,16 @@ cd buildroot
 make
 ```
 
-### 4. Flash the buildroot generated image in a portable memory (SD card, USB, etc...)
+### 4. Add the GPIO config to the device-tree configuration and rebuild
+```
+cd ..
+cp buildroot_aux_files/sun50i-h618-orangepi-zero3.dts buildroot/output/build/linux-6.12.6/arch/arm64/boot/dts/allwinner/sun50i-h618-orangepi-zero3.dts
+cd buildroot
+make
+```
+> This configuration activates the PC5 GPIO pin. Minor adjustments to the [linux kernel file](https://github.com/torvalds/linux/blob/master/arch/arm64/boot/dts/allwinner/sun50i-h618-orangepi-zero3.dts)
+
+### 5. Flash the buildroot generated image in a portable memory (SD card, USB, etc...)
 ```
 sudo dd if=output/images/sdcard.img of=/dev/sdX bs=1M conv=fsync status=progress
 sudo sync
