@@ -22,8 +22,9 @@ Connecting through ssh to the board, execute the python script
 
 ```
 cd /
-python3 bitbeep.py
+python3 bitbeep.py <song_file.txt>
 ```
+> There are songs available at `/usr/share/bitbeep/songs`
 
 ## Build
 
