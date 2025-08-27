@@ -12,6 +12,7 @@ Features:
 - Python3
 - libgpiod to manage gpio pins
 - Singer python script
+- Songs loaded
 
 ## Install
 
